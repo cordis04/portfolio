@@ -1,0 +1,217 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.encabezado-proyecto {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.encabezado-proyecto h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
+}
+
+.volver-portfolio {
+    position: absolute;
+    left: 20px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.volver-portfolio:hover {
+    color: white;
+}
+
+.contenido-proyecto {
+    flex-grow: 1;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contenido-proyecto p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+/* Estilos específicos de la Lista de Tareas */
+.contenedor-entrada {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tareaNueva {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#botonAgregar {
+    padding: 10px 15px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#botonAgregar:hover {
+    background-color: #27ae60;
+}
+
+.lista-tareas {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    transition: all 0.3s;
+}
+
+.tarea:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tarea.completada {
+    background-color: #f8f8f8;
+    text-decoration: line-through;
+    color: #888;
+}
+
+.acciones {
+    display: flex;
+    gap: 8px;
+}
+
+.acciones button {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.editar {
+    background-color: #3498db;
+}
+
+.editar:hover {
+    background-color: #2980b9;
+}
+
+.eliminar {
+    background-color: #e74c3c;
+}
+
+.eliminar:hover {
+    background-color: #c0392b;
+}
+
+.guardar {
+    background-color: #2ecc71;
+    display: none;
+}
+
+.cargando, .vacio {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    padding: 20px;
+}
+
+.edit-input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .contenedor-entrada {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .contenedor-entrada button {
+        width: 100%;
+    }
+    .tarea {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .acciones {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 768px) {
+    .encabezado-proyecto h1 {
+        font-size: 2em;
+    }
+    .volver-portfolio {
+        font-size: 1em;
+        left: 10px;
+    }
+    .contenido-proyecto {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .encabezado-proyecto h1 {
+        font-size: 1.5em;
+    }
+    .volver-portfolio {
+        position: static;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .encabezado-proyecto {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi Portfolio Web</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "e0J6Ub-O34oAlNDmN",
+      });
+    })();
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio" >Inicio</a></li>
+                <li><a href="#sobre-mi" >Sobre Mí</a></li>
+                <li><a href="#proyectos" >Proyectos</a></li>
+                <li><a href="#habilidades" >Habilidades</a></li>
+                <li><a href="#contacto" >Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio" class="seccion-contenido">
+            <div class="seccion-heroe">
+                <h1>¡Hola! Soy Ignacio</h1>
+                <p>Desarrollador Web hincha de AAAJ </p>
+                <img src="img/fondo.png" alt="Fondo de bienvenida" class="imagen-heroe" />
+                <a href="#proyectos" class="btn-principal">Ver Proyectos</a>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Mí -->
+        <section id="sobre-mi" class="seccion-contenido">
+            <h1>Sobre Mí</h1>
+            <p>Hola, soy un estudiante de la UADE, en la carrera de Licenciatura en Gestión de Tecnología de la Información. Me gusta crear paginas webs. Mi viaje en el desarrollo web comenzó con un curso en el año 2021 , y desde entonces, me he dedicado a aprender y perfeccionar las distintas herramientas.</p>
+            <p>Fuera del código, me encanta ir a la cancha de Argentinos Juniors siempre que juega de local y cuando se puede de visitante. Soy un intento de creador de contenido. Creo que mantener un equilibrio entre el estudio en la universidad y la vida personal es clave para la creatividad y la productividad.</p>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section id="proyectos" class="seccion-contenido">
+            <h1>Mis Proyectos Interactivos</h1>
+            <p>Aquí puedes explorar algunos de mis trabajos desarrollados con JavaScript, HTML y CSS, presentados como artículos de blog.</p>
+
+            <div class="cuadricula-proyectos">
+                <article class="articulo-proyecto">
+                    <img src="img/calcu.jpg" alt="Vista previa de la calculadora" />
+                    <h2>Calculadora Básica</h2>
+                    <time datetime="2025-06-22">22 de Junio, 2025</time>
+                    <p>Una calculadora funcional que realiza operaciones aritméticas básicas, porcentaje y raíz cuadrada. Ideal para entender la manipulación del DOM y la lógica de eventos.</p>
+                    <a href="contenido/calculadora.html" class="btn-ver-proyecto">Ver Proyecto</a>
+                </article>
+
+                <article class="articulo-proyecto">
+                    <img src="img/img10.png" alt="Vista previa de la galería" />
+                    <h2>Galería de Imágenes con Lightbox</h2>
+                    <time datetime="2025-06-23">23 de Junio, 2025</time>
+                    <p>Una galería interactiva que permite visualizar imágenes en un modo Lightbox con navegación entre ellas. Demuestra el manejo de eventos, arrays y estilos dinámicos.</p>
+                    <a href="contenido/galeria.html" class="btn-ver-proyecto">Ver Proyecto</a>
+                </article>
+
+                <article class="articulo-proyecto">
+                    <img src="img/sliderpre.jpg" alt="Vista previa del slider" />
+                    <h2>Slider de Imágenes Automático</h2>
+                    <time datetime="2025-06-27">27 de Junio, 2025</time>
+                    <p>Un carrusel de imágenes con navegación manual y pase automático, ideal para presentaciones visuales. Incluye funcionalidad de "dots" y swipe para dispositivos móviles.</p>
+                    <a href="contenido/slider.html" class="btn-ver-proyecto">Ver Proyecto</a>
+                </article>
+
+                <article class="articulo-proyecto">
+                    <img src="img/listaprevi.png" alt="Vista previa de la lista de tareas" />
+                    <h2>Lista de Tareas (IndexedDB)</h2>
+                    <time datetime="2025-06-29">29 de Junio, 2025</time>
+                    <p>Una aplicación de lista de tareas persistente que guarda tus pendientes directamente en el navegador utilizando IndexedDB. Un ejemplo práctico de almacenamiento de datos local.</p>
+                    <a href="contenido/tareas.html" class="btn-ver-proyecto">Ver Proyecto</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Habilidades -->
+        <section id="habilidades" class="seccion-contenido">
+            <h1>Habilidades y Experiencia</h1>
+
+            <div class="seccion-habilidades">
+                <h2>Habilidades Técnicas</h2>
+                <ul class="lista-habilidades">
+                    <li><strong>HTML5:</strong> Estructura semántica, etiquetas comunes, formularios, enlaces, imágenes y accesibilidad básica.</li>
+                    <li><strong>CSS3:</strong> Flexbox, Grid, media queries para diseño responsive, propiedades visuales básicas, transiciones y animaciones simples.</li>
+                    <li><strong>Control de Versiones:</strong> GitHub.</li>
+                    <li><strong>Herramientas de Desarrollo:</strong> Visual Studio Code, DevTools del navegador, extensiones útiles y estructura básica de carpetas.</li>
+                </ul>
+            </div>
+
+            <div class="seccion-experiencia">
+                <h2>Experiencia Educativa</h2>
+                <div class="item-experiencia">
+                    <h3>Curso de Diseño y Desarrollo Web en 2021</h3>
+                    <p class="empresa">Buenos Aires Ciudad | Junio 2021 - Octubre/Noviembre 2021</p>
+                    <ul>
+                        <li>Aprendizaje intensivo de HTML, CSS y principios de diseño web.</li>
+                        <li>Desarrollo de proyectos prácticos.</li>
+                        <li>Enfoque en Diseño general y Experiencia de Usuario.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="seccion-contenido">
+            <h2 style="text-align: center;">Contacto</h2>
+
+            <form id="form-contacto">
+                <div class="grupo-formulario">
+                    <input type="text" name="name" placeholder="Tu nombre" required />
+                </div>
+                <div class="grupo-formulario">
+                    <input type="email" name="email" placeholder="Tu correo" required />
+                </div>
+                <div class="grupo-formulario">
+                    <textarea name="message" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+
+            <div id="mensaje-enviado" class="oculto" style="text-align: center;">✅ Enviado correctamente</div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Portfolio. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://github.com/cordis04" target="_blank">GitHub</a>
+            <a href="https://cordis04.github.io/LinkTree-Tps/" target="_blank">Linktree</a>
+            <a href="https://cordis04.github.io/LinkTree-Tps/pagina%20web/index.html" target="_blank">Identikit</a>
+            <a href="https://cordis04.github.io/Tp2/" target="_blank">Blog Personal</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
+

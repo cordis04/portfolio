@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lista de Tareas con IndexedDB</title>
+    <link rel="stylesheet" href="/css/tareas.css" />
+</head>
+<body>
+    <header class="encabezado-proyecto">
+        <a href="../index.html#proyectos" class="volver-portfolio">← Volver al Portfolio</a>
+        <h1>Lista de Tareas con IndexedDB</h1>
+    </header>
+    <main class="contenido-proyecto">
+        <p>Una aplicación de lista de tareas que guarda tus pendientes directamente en tu navegador.</p>
+
+        <div class="contenedor-entrada">
+            <input type="text" id="tareaNueva" placeholder="Añade una nueva tarea..." />
+            <button id="botonAgregar">Agregar</button>
+        </div>
+
+        <ul class="lista-tareas" id="listaDeTareas">
+            <li class="cargando">Cargando tareas...</li>
+        </ul>
+    </main>
+    <script src="/js/tareas.js"></script>
+</body>
+</html>
+
